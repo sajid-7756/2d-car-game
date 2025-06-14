@@ -1,0 +1,61 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d Car Game</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-cyan-600">
+    <div class="flex justify-center items-center w-full h-screen">
+
+        <div class="w-[400px] h-[500px] bg-gray-800 rounded-sm relative overflow-hidden">
+            <div class="absolute top-0 bottom-0 left-[100px] w-px bg-sky-200"></div>
+            <div class="absolute top-0 bottom-0 left-[200px] w-px bg-sky-200"></div>
+            <div class="absolute top-0 bottom-0 left-[300px] w-px bg-sky-200"></div>
+
+
+            <div id="main-car"
+                class="w-[80px] h-[150px] absolute bottom-0 left-[25%]  translate-x-[12%] translate-y-[-5%] transition-[left,bottom] duration-[150ms] ease-linear">
+                <img class="w-full h-full object-cover" src="/src/images/mainCar.png" alt="">
+            </div>
+
+
+            <div class="fall-box w-[80px] translate-x-[12%] h-[150px] absolute top-[-140px] left-[0px]">
+                <img class="w-full h-full object-cover" src="/src/images/car 1.png" alt="">
+            </div>
+
+            <div class="fall-box w-[80px] translate-x-[12%] h-[150px] absolute top-[-140px] left-[100px]">
+                <img class="w-full h-full object-cover" src="/src/images/car 2.png" alt="">
+            </div>
+
+            <div class="fall-box w-[80px] translate-x-[12%] h-[150px] absolute top-[-140px] left-[200px]">
+                <img class="w-full h-full object-cover" src="/src/images/car 3.png" alt="">
+            </div>
+
+        </div>
+
+        <div id="game-over"
+            class="bg-cyan-700 rounded-xl p-8 shadow-2xl w-80 h-60 hidden flex-col items-center justify-center absolute">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 font-serif tracking-wider">GAME OVER</h2>
+            <p class="text-xl text-gray-900 font-medium">Your Score: <span id="score">0</span></p>
+            <button id="restart-btn"
+                class="btn border-none mt-6 px-6 py-2 bg-gray-800 text-gray-300 rounded-lg text-lg font-semibold transition-colors">
+                Play Again
+            </button>
+        </div>
+
+        <div class="absolute bottom-5 sm:bottom-35 w-50 flex items-center justify-center space-x-10">
+            <button id="left-btn" class="text-4xl"> ⬅️ </button>
+            <button id="right-btn" class="text-4xl"> ➡️ </button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

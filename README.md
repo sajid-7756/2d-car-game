@@ -1,4 +1,4 @@
-# 2d-car-game
+# 2d-car-game https://sajid-7756.github.io/2d-car-game/
 🏎️ Road Dodge - JavaScript Car Game
 A simple and fun browser game where you control a car to dodge falling enemy cars. Made with 💻 HTML, Tailwind CSS, and vanilla JavaScript!
 
